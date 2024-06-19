@@ -1,0 +1,139 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FFFFFA;
+    color: #211851;
+}
+
+header {
+    background-color: whitesmoke;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    height: 50px;
+    margin-left: 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px; /* Add margin to create space between links */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #F86509;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #211851;
+}
+
+.content-section {
+    padding: 20px;
+    display: none; /* Hide all sections by default */
+}
+
+#home {
+    display: block; /* Show home section by default */
+}
+
+.background-img {
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 100px;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.background-img .overlay {
+    background: rgba(0, 0, 0, 0.5); /* Add a dark overlay to make text readable */
+    padding: 50px;
+}
+
+.pricing-plans {
+    display: flex;
+    justify-content: space-around;
+}
+
+.plan {
+    background-color: #F86509;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    margin: 10px;
+    flex: 1;
+}
+
+.plan h2 {
+    color: white;
+}
+
+#order-form,
+#contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+#order-form label,
+#contact-form label {
+    margin: 5px 0;
+}
+
+#order-form input,
+#contact-form input,
+#order-form select,
+#order-form textarea,
+#contact-form textarea {
+    padding: 10px;
+    margin: 5px 0 15px;
+    border: 1px solid #F86509;
+    border-radius: 5px;
+}
+
+#order-form button,
+#contact-form button {
+    background-color: #F86509;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#order-form button:hover,
+#contact-form button:hover {
+    background-color: #211851;
+}
+
+.social-media a {
+    display: block;
+    margin: 5px 0;
+    color: #211851;
+    text-decoration: none;
+}
+
+.social-media a:hover {
+    color: #F86509;
+}
+
+footer {
+    background-color: #F86509;
+    text-align: center;
+    padding: 10px 0;
+    color: white;
+}

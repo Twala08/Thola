@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thola-tell</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="images/T_logo.jpg" alt="" class="logo">
+        <nav>
+            <ul>
+                <li><a href="#home" onclick="navigate('home')">Home</a></li>
+                <li><a href="#services" onclick="navigate('services')">Services</a></li>
+                <li><a href="#order" onclick="navigate('order')">Order</a></li>
+                <li><a href="#contact" onclick="navigate('contact')">Contact</a></li>
+                <li><a href="#about" onclick="navigate('about')">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main id="main-content">
+        <section id="home" class="content-section background-img">
+            <div id="carousel" class="carousel"></div>
+            <div class="overlay">
+                <h1>Welcome to Thola-tell</h1>
+                <p>At Thola-tell, we're committed to revolutionizing the way you stay connected. As a leading telecommunications company, we specialize in providing cost-effective mobile data bundles tailored to suit your needs. Whether you're a casual browser or a data-hungry user, we have the perfect plan for you.</p>
+                <p>Contact us: +27 63 046 6613</p>
+            </div>
+        </section>
+        
+        <section id="services" class="content-section">
+            <h1>Our Services</h1>
+            <ul>
+                <li>Essential Connectivity Solutions</li>
+            </ul>
+            <div class="pricing-plans">
+                <div class="plan">
+                    <h2>R199.00</h2>
+                    <p>30GB Anytime Data bundles</p>
+                    <button onclick="navigate('order')">Buy Now</button>
+                </div>
+                <div class="plan">
+                    <h2>R150.00</h2>
+                    <p>20GB Anytime Data bundles</p>
+                    <button onclick="navigate('order')">Buy Now</button>
+                </div>
+                <div class="plan">
+                    <h2>R500.00</h2>
+                    <p>200GB Anytime Data bundles</p>
+                    <button onclick="navigate('order')">Buy Now</button>
+                </div>
+            </div>
+        </section>
+        
+        <section id="order" class="content-section">
+            <h1>Order Your Data Bundles Today</h1>
+            <p>We're here to fulfill your data needs. Whether you're looking to stay connected on the go or power your business operations, we've got you covered. Contact us now to order your data bundles and enjoy seamless connectivity.</p>
+            <p>Phone: +27 63 046 6613</p>
+            <p>Email: info@tholatell.co.za</p>
+
+            <h2>Make Your Order</h2>
+            <p>BANK: Capitec</p>
+            <p>Account holder: Tholatelcom</p>
+            <p>Account number: 1730835412</p>
+            <form id="order-form">
+                <label for="full-name">Full Name:</label>
+                <input type="text" id="full-name" name="full-name" required>
+                
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+                
+                <label for="package">Data Bundle Package:</label>
+                <select id="package" name="package" required>
+                    <option value="30GB">30GB - R199.00</option>
+                    <option value="20GB">20GB - R150.00</option>
+                    <option value="200GB">200GB - R500.00</option>
+                </select>
+                
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="button" onclick="confirmOrder()">Confirm Order</button>
+            </form>
+        </section>
+        
+        <section id="contact" class="content-section">
+            <h1>Contact Us</h1>
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit">Submit</button>
+            </form>
+            <div class="social-media">
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
+                <a href="#">Dribbble</a>
+            </div>
+        </section>
+        
+        <section id="about" class="content-section">
+            <h1>About Us</h1>
+            <p>At Thola-tell, we're committed to revolutionizing the way you stay connected. As a leading telecommunications company, we specialize in providing cost-effective mobile data bundles tailored to suit your needs. Whether you're a casual browser or a data-hungry user, we have the perfect plan for you.</p>
+        </section>
+    </main>
+    
+    <footer>
+        <p>Copyright ©2024 All rights reserved | Powered by MYHEAT</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
